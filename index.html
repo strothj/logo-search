@@ -10,25 +10,33 @@
 	<title>Society Education Programs - Logo Search</title>
 </head>
 
-<body>
-    <article>
-        <header>
-            <h1>Society Education Programs</h1>
+<body class="body">
+    <article class="body__contents">
+        <header class="header">
+            <h1 class="header__contents">Society Education Programs</h1>
         </header>
 
-        <nav>
-            <form id="filter-form">
-                <select name="program" id="program">
-                    <option value="all">Search All</option>
-                    <option value="scholarship">Scholarship Program</option>
-                    <option value="loan">Loan Program</option>
-                </select>
-                <select name="education" id="education">
-                    <option value="all">Search All</option>
-                    <option value="k12">K-12</option>
-                    <option value="highschool">High School</option>
-                </select>
-                <button type="submit">Search</button>
+        <nav class="search-box">
+            <form class="search-box__contents" id="filter-form">
+                <div class="filters">
+                    <div class="filters__col">
+                        <select class="filters-select uppercase" name="program" id="program">
+                            <option value="all">Search All</option>
+                            <option value="scholarship">Scholarship Program</option>
+                            <option value="loan">Loan Program</option>
+                        </select>
+                    </div>
+                    <div class="filters__col">
+                        <select class="filters-select uppercase" name="education" id="education">
+                            <option value="all">Search All</option>
+                            <option value="k12">K-12</option>
+                            <option value="highschool">High School</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="search-button-box">
+                    <button class="search-button-box__button uppercase" type="submit">Search</button>
+                </div>
             </form>
         </nav>
 

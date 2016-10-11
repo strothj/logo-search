@@ -1,7 +1,79 @@
+@import 'https://fonts.googleapis.com/css?family=Great+Vibes|Roboto:900';
+
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+.body {
+  font-family: 'Roboto', sans-serif; 
+}
+
+.body__contents {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.header {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.5em;
+  text-align: center;
+  color: #9D222A;
+}
+
+.header__contents {
+  padding-top: 40px;
+}
+
+.search-box {
+  background-color: #F2F2F2;
+}
+
+.search-box__contents {
+  padding-top: 120px;
+}
+
+.filters {
+  font-size: 0;
+}
+
+.filters__col {
+  font-size: 1rem;
+  display: inline-block;
+  width: 50%;
+  padding: 10px;
+}
+
+.filters-select {
+  width: 100%;
+  padding: 10px;
+  color: #D1D7B9;
+}
+
+.filters-select option {
+  background-color: #E2DCDC;
+  color: #9E222A;
+  border-bottom: 5px solid black;
+}
+
+.search-button-box {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.search-button-box__button {
+  font-size: .9em;
+  color: white;
+  background-color: #9D222A;
+  padding: 10px 40px;
+  border: none;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
