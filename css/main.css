@@ -52,6 +52,11 @@ html {
   width: 100%;
   padding: 10px;
   color: #D1D7B9;
+  height: 43px;
+}
+
+.filters-select:invalid {
+  font-size: .8em;
 }
 
 .filters-select option {
